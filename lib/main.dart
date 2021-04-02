@@ -24,8 +24,18 @@ class _MyAppState extends State<MyApp> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               TextField(
+                decoration: InputDecoration(
+                    fillColor: Colors.lightBlue[50],
+                    filled: true,
+                    icon: Icon(Icons.adb),
+                    prefixIcon: Icon(Icons.person),
+                    prefixText: "Name :",
+                    prefixStyle: TextStyle(color: Colors.blue),
+                    labelText: "Nama Lengkap :",
+                    hintText: "Masukan Nama Lengkap Anda",
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10))),
                 obscureText: false,
-                maxLines: 5,
                 onChanged: (value) {
                   setState(() {});
                 },
